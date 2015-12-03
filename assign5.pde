@@ -333,15 +333,15 @@ boolean isHit(int ax, int ay, int aw, int ah, int bx, int by, int bw, int bh){
 }
 int closestEnemy(int x, int y){
   float minDist=800;
-  float [] dist = new float [8];
+  float [] distances = new float [8];
   for(int i=0; i<8; i++){
     if(enemyX[i]!=-1 || enemyY[i]!=-1){
-      dist[i]=dist(enemyX[i],enemyY[i],x,y);
+      distances[i]=dist(enemyX[i],enemyY[i],x,y);
     }
-    if(dist[i]<minDist){
-      minDist=dist[i];
+    if(distances[i]<minDist){
+      minDist=distances[i];
     }
-    if(dist[i]==minDist){
+    if(distances[i]==minDist){
     return i;
     }
   }
