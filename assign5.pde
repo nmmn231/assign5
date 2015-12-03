@@ -363,7 +363,7 @@ void keyPressed(){
         rightPressed = true;  
     }
   }
-  if (key == ' '){
+  if (key == ENTER){
     spacePressed = true;
   }
 }
@@ -384,7 +384,7 @@ void keyReleased(){
         rightPressed = false;
     }
   }
-    if (key == ' '){
+    if (key == ENTER){
     spacePressed = false;
   }
 }
