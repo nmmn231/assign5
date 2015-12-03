@@ -29,7 +29,7 @@ int[] enemyY = new int[enemyCount];
 
 //bullet
 PImage bullet;
-int bulletSpeed=5, bulletTurn=2;
+int bulletSpeed=5;
 int bCounter=-1;
 int b=1;
 int[] bulletX = new int[5];
@@ -140,9 +140,9 @@ void draw()
           image(bullet, bulletX[i],bulletY[i]);
           bulletX[i]-=bulletSpeed;
           if(enemyY[closestEnemy(fighterX, fighterY)]<fighterY){
-            bulletY[i]-=bulletTurn;
+            bulletY[i]--;
           }else{
-            bulletY[i]+=bulletTurn;
+            bulletY[i]++;
           }
           if(bulletX[i]<0){
             bulletX[i]=-10000;
