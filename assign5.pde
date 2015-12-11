@@ -239,6 +239,7 @@ void draw()
           for(int i=0; i<5; i++){
             bulletShooting[i]=false;
           }
+          score=0;
           gamestate=2;
           addEnemy(0);
           fighterX=570;
